@@ -41,9 +41,6 @@ TRspx['Ratio Base 100'].ffill(inplace=True)
 TRspx['7SMA'] = TRspx['Ratio Base 100'].rolling(1764).mean()
 
 # %%
-TRspx
-
-# %%
 fig = plt.figure(figsize = (10, 6),dpi=100)
 
 df = TRspx[TRspx.index.year>=1980]
